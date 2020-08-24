@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .App-logo {
@@ -28,6 +29,25 @@
   color: #61dafb;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.errors {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: .5rem;
+}
+
+form > button {
+  margin-top: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +56,4 @@
     transform: rotate(360deg);
   }
 }
+
